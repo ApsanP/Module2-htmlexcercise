@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <a href="/">Home</a>
 
-  <body>
-    <header>
-      <nav>
-        <!-- works like <a href="/index.html">Home</a> -->
-        <a href="/">Home</a>
-      </nav>
-    </header>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form Page</title>
+    </head>
+    <body>
+      <form method="POST" action="https://jsonplaceholder.typicode.com/posts">
+        <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
 
-    <main></main>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
 
-    <footer>Copyright &copy; 2024</footer>
-  </body>
+        <div>
+          <label>Coding Language:</label>
+          <div>
+            <input type="radio" id="java" name="codingLanguage" value="java" />
+            <label for="java">Java</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="python"
+              name="codingLanguage"
+              value="python"
+            />
+            <label for="python">Python</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="javascript"
+              name="codingLanguage"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+        </div>
+
+        <div>
+          <label>Types of Vehicle:</label>
+          <div>
+            <input type="checkbox" id="car" name="vehicle" value="car" />
+            <label for="car">Car</label>
+          </div>
+          <div>
+            <input type="checkbox" id="bike" name="vehicle" value="bike" />
+            <label for="bike">Bike</label>
+          </div>
+          <div>
+            <input type="checkbox" id="truck" name="vehicle" value="truck" />
+            <label for="truck">Truck</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="carBrand">Car Brand:</label>
+          <select id="carBrand" name="carBrand">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="ford">Ford</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit form</button>
+      </form>
+    </body>
+  </html>
 </html>
